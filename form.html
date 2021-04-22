@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Entre em Contato</title>
+  <style>
+    body {
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', 'Verdana', 'sans-serif';
+      margin: 0;
+      padding: 0;
+      display: grid;
+    }
+
+    h2 {
+      text-align: center;
+      color: white;
+    }
+
+
+
+    .principal {
+      width: 100vw;
+      height: 94vh;
+      background: #EAEAEA;
+      display: grid;
+      justify-content: center;
+      align-items: center;
+    }
+
+    footer p {
+      font-size: 80%;
+      text-align: center;
+      color: gray;
+      height: 10%;
+    }
+
+    .entre-em-contato {
+      display: grid;
+      align-content: center;
+      justify-content: center;
+      background-color: black;
+      height: 500px;
+      width: 400px;
+    }
+
+    .formulario {
+      display: grid;
+    }
+
+    input,
+    select,
+    textarea {
+      margin-top: 1.5em;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="principal">
+    <div class="entre-em-contato">
+      <h2>Entre em Contato</h2>
+      <form action='#' method="POST" class="formulario">
+        <input type="text" name="nome" placeholder="Digite o seu nome" required />
+        <input type="text" name="fone" placeholder="Digite o seu celular" required />
+        <input type="text" name="email" placeholder="Digite o seu email" required />
+        <select>
+          <option value=" ">Selecione uma opção</option>
+          <option value="hire">Contratação</option>
+          <option value="feedback">Feedback</option>
+          <option value="question">Dúvida</option>
+        </select>
+        <textarea id="comments" name="comentarios" rows="5" cols="33" placeholder="Escreva algo"></textarea>
+        <input type="button" name="bottom" value="Voltar" onclick='history.go(-1)' />
+        <input type="submit" name="bottom" value="Enviar" />
+
+      </form>
+    </div>
+  </div>
+  <footer id="rodape">
+    <p>Desenvolvido por Talita de Freitas Silva</p>
+  </footer>
+</body>
+
+
+
+
+</html>
