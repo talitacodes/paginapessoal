@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Disciplinas</title>
+  <style>
+    body {
+
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', 'Verdana', 'sans-serif';
+      margin: 0;
+      padding: 0;
+      display: grid;
+    }
+
+    #principal {
+      width: 100vw;
+      height: 84vh;
+      background: white;
+      display: grid;
+      justify-content: center;
+      align-items: center;
+    }
+
+    h2 {
+      margin: 0px;
+    }
+
+    h3 {
+      margin: none;
+    }
+
+    input[type=submit] {
+      height: 35%;
+      width: 35%;
+      margin-top: 25%;
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', 'Verdana', 'sans-serif';
+      background: white;
+
+    }
+
+    footer p {
+      font-size: 80%;
+      text-align: center;
+      color: gray;
+      height: 10%;
+
+    }
+  </style>
+</head>
+
+<body>
+  <div id="principal">
+    <div id="disciplinas">
+      <h2>Disciplinas</h2>
+      <h3>Análise e Desenvolvimento de Sistemas</h3>
+      <table id=tabela>
+        <tr id="cabecalho">
+          <th>Nome</th>
+          <th>Período</th>
+        </tr>
+        <tr>
+          <td>Estrutura de Dados 2</td>
+          <td>4º</td>
+        </tr>
+        <tr>
+          <td>Redes de Computadores</td>
+          <td>4º</td>
+        </tr>
+        <tr>
+          <td>Desenvolvimento Web</td>
+          <td>5º</td>
+        </tr>
+        <tr>
+          <td>Gestão de Projetos</td>
+          <td>5º</td>
+        </tr>
+        <tr>
+          <td>Qualidade de Software</td>
+          <td>5º</td>
+        </tr>
+      </table>
+      <input type="submit" name="buttom" value="Voltar" onclick='history.go(-1)' />
+    </div>
+  </div>
+  <footer>
+    <p>Desenvolvido por Talita de Freitas Silva</p>
+  </footer>
+</body>
+
+</html>
